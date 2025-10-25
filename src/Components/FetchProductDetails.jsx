@@ -386,7 +386,7 @@ let[filter,setFilter]=useState("")
             <button id='update' onClick={()=>update(product.productId)} >Update</button>
             </div>
           ))) : (<h2>Choose Product Brand before Search</h2> )) : filterProductState == true && ( filterProduct.length >0  ? (filterProduct.map((product) =>(
-            <div key={product.productId} className='prod-inne'>
+            <div key={product.productId} className='prod-inner'>
 
               <h2>Product Brand : {product.productBrand}</h2>
              {filter == "ATOZ" || filter == "ZTOA" ? ( <h2 id='h1'>Product Name : {product.productName}</h2> ) :  <h2>Product Name : {product.productName}</h2>}
