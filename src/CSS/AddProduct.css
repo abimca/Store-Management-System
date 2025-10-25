@@ -1,0 +1,101 @@
+.outerProduct{
+    height: calc(100vh - 6vh);
+    background-color:#40c3f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+}
+
+.outerProduct > h2{
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-top: 10px;
+    text-shadow:0px 0px 5px white;
+}
+
+.outerProduct > h3{
+    text-shadow:0px 0px 5px white;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.outerProduct > .innerProduct>.addProduct{
+    /* border: 2px solid red; */
+    width: 400px;
+    border-radius: 50px;
+    background-color: rgb(237, 236, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+.outerProduct > .innerProduct >.addProduct > form {
+    /* border: 2px solid; */
+    width: 70%;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    
+}
+
+.outerProduct > .innerProduct >.addProduct > form >input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.outerProduct > .innerProduct >.addProduct > form >input::placeholder{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+ .innerProduct >.addProduct > form > #add{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+    background-color:#3dd828;
+   
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    &&:hover{
+         background-color:#2ca148;
+        
+    }
+}
+
+.outerProduct > #b1{
+ padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(136, 46, 164);
+  color: white;
+  margin: 10px 10px ;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+
+  &&:hover{
+    background-color:rgb(194, 39, 241) ;
+    box-shadow: 0px 0px 5px white;
+   
+  }
+}

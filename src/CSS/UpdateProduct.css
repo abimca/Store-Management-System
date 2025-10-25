@@ -1,0 +1,175 @@
+
+
+.outerProd1{
+    /* min-height: calc(100vh - 50px); */
+    height: 94vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #40c3f8;
+    /* border: 2px solid red; */
+    /* padding: 60px; */
+    gap: 30px;
+  
+}
+
+.outerProd1 > .oldProduct{
+    /* border: 1px solid red; */
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; 
+    background-color: rgb(215, 234, 250);
+    border-radius: 30px;
+    gap: 10px;
+
+}
+
+
+.outerProd1 > .oldProduct >.prod-left{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    /* border: 2px solid; */
+
+}
+
+.outerProd1 >.oldProduct >.prod-right{
+    /* border: 2px solid; */
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+} 
+
+
+
+
+.outerProd1 > .updateProduct{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: rgb(215, 234, 250);
+    width: 50%;
+    border-radius: 30px; 
+}
+
+
+.outerProd1 > .updateProduct > h2{
+  text-shadow: 0px 0px 1px black;  
+}
+
+.outerProd1 > .updateProduct > h3{
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  /* background-color: yellow; */
+}
+
+
+
+.outerProd1 > .updateProduct >.update {
+     /* border: 2px solid red; */
+     width: 50%;
+     /* background-color: #ffd5e5; */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     /* border-radius: 25px; */
+     padding: 15px;
+     margin: 10px;
+     
+    }
+    .outerProd1 > .updateProduct >.update > form{
+     width: 90%;
+      display:  flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+}
+
+.outerProd1 > .updateProduct >.update > form>.update-details{
+  /* border: 2px solid; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.outerProd1 > .updateProduct >.update > form>.update-details>.update-label{
+  /* flex-basis: 30%; */
+  width: 100%;
+  text-align: center;
+  /* border: 2px solid green; */
+  font-size: 20px;
+  font-weight: bold;
+}
+/* .outerProd1 > .updateProduct >.update > form >label {
+} */
+.outerProd1 > .updateProduct >.update > form >.update-details>input {
+  /* flex-basis: 40%; */
+    /* display: block; */
+    /* margin-top: 10px;   */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 5px;
+    padding-left: 10px;
+    border: none;
+    
+}
+
+.outerProd1 > .updateProduct >.update > form >#update2{
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  background-color: #ad4413;
+  color: white;
+  margin-top: 20px;
+  /* margin-bottom: 10px;  */
+  &&:hover{
+    cursor: pointer;
+    background-color: #f4834e;
+  }
+
+}
+
+#backb5{
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(136, 46, 164);
+  color: white;
+  /* margin: 10px 10px ; */
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+
+  &&:hover{
+    background-color:rgb(194, 39, 241) ;
+    box-shadow: 0px 0px 5px white;
+   
+  }
+} 

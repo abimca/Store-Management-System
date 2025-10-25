@@ -1,0 +1,120 @@
+
+/* New Store Register */
+
+.outer{
+  /* height: calc(100vh - 50px); */
+  height: 94Vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly; 
+  align-items: center;
+  background-color: #40c3f8;
+  padding: 100px;
+  /* border: 2px solid; */
+}
+
+.outer > .left{
+  padding: 100px;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.outer > .left >h1{
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  text-shadow: 0px 0px 5px  white;
+}
+
+.outer > .left >img{
+  height: 400px;
+  animation: slide 1.5s ease-in infinite  ;
+
+}
+
+@keyframes slide {
+    from{
+        transform: translate(0,0);
+    }
+
+    to{
+        transform: translate(100px,0);
+    }
+}
+
+.outer > .right{
+ 
+  /* border: 2px solid rgb(0, 126, 128); */
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 30px;
+}
+
+.outer > .right >.storeRegister{
+  width: 350px;
+  background-color: #5eaed0;
+  border-radius: 20px;
+  padding: 20px 30px ;
+  box-shadow: 0px 0px 5px white;
+
+}
+
+.outer > .right >.storeRegister > form >input{
+  display: block;
+  padding:10px ;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  border:none;
+
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* .outer > .right >.storeRegister > form >label{
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+} */
+
+.outer > .right >.storeRegister > form > #b1{
+
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color:#2ca148;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color:white;
+  &&:hover{
+    background-color:#43e62d;;
+  }
+}
+
+#back{
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(136, 46, 164);
+  color: white;
+  margin: 10px 10px ;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+
+  &&:hover{
+    background-color:rgb(194, 39, 241) ;
+    box-shadow: 0px 0px 5px white;
+   
+  }
+}
