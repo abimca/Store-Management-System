@@ -79,16 +79,16 @@ useEffect(()=>{
 
       <div className="strdetails">
         <div className="strleft">
-            <p>Barnch Email Id : </p>
-            <p>Barnch Phone No : </p>
-            <p>Manager Name : </p>
-            <p>Manager Phone No : </p>
+            <p id='heading'>Barnch Email Id </p>
+            <p id='heading'>Barnch Phone No </p>
+            <p id='heading'>Manager Name </p>
+            <p id='heading'>Manager Phone No </p>
         </div>
         <div className="strright">
-            <p>{store.storeEmail} </p>
-            <p>{store.storePhoneNo}</p>
-            <p>{store.managerName}</p>
-            <p>{store.managerPhoneNo}</p>
+            <p>: {store.storeEmail} </p>
+            <p>: {store.storePhoneNo}</p>
+            <p>: {store.managerName}</p>
+            <p>: {store.managerPhoneNo}</p>
         </div>
       </div>
        

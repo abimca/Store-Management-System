@@ -1,7 +1,7 @@
 
 
 .alldetails{
-    min-height:calc(100vh - 50px);
+    min-height:94vh;
     background-color: #40c3f8;
     display: flex;
     flex-direction: column;
@@ -132,10 +132,10 @@ padding: 30px 50px;
 }
 .alldetails >.prod-outer >.prod-inner-1>.prod-inner{
   /* min-width: 400px; */
-  height: 400px;
+  /* height: 400px; */
   width: 500px;
   /* border: 2px solid; */
-  padding: 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -150,6 +150,56 @@ padding: 30px 50px;
       transform: scale(1.05);
   }
 }
+
+.alldetails >.prod-outer >.prod-inner-1>.prod-inner>.prod-card{
+  /* border: 2px solid; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.alldetails >.prod-outer >.prod-inner-1>.prod-inner>.prod-card>.prod-innerLeft{
+   /* border: 2px solid; */
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;   */
+  gap: 5px;
+}
+
+.alldetails>.prod-outer >.prod-inner-1>.prod-inner>.prod-card>.prod-innerLeft>p{
+   font-size: 20px;
+   /* font-weight: 600; */
+  
+}
+
+.alldetails>.prod-outer >.prod-inner-1>.prod-inner>.prod-card>.prod-innerRight>p{
+   font-size: 20px;
+   font-weight: 700;
+  
+}
+
+.alldetails>.prod-outer >.prod-inner-1>.prod-inner>.prod-card>.prod-innerLeft>.heading{
+  /* border: 2px solid ; */
+  margin-left: 50px;
+  width: 150px;
+ 
+}
+
+.alldetails >.prod-outer >.prod-inner-1>.prod-inner>.prod-card>.prod-innerRight{
+  /* border: 2px solid; */
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+   /* justify-content: center;  */
+   gap: 5px;
+}
+
+
+
+
+
 
 .alldetails >.prod-outer >.prod-inner-1> .prod-inner > #update{
   padding: 10px;
@@ -265,9 +315,17 @@ font-size: 23px;
   }
 }
 
-.prod-inner-1 >.prod-inner>#h1{
+.prod-innerLeft>#h1{
   /* border: 2px solid; */
-  padding:5px 15px;
+  padding:3px;
+  
+  border-radius: 8px;
+  background-color: yellow;
+}
+
+.prod-innerRight>#h1{
+  /* border: 2px solid; */
+  padding:3px;
   border-radius: 8px;
   background-color: yellow;
 }

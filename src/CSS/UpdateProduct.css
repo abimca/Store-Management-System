@@ -1,7 +1,6 @@
 
 
 .outerProd1{
-    /* min-height: calc(100vh - 50px); */
     height: 94vh;
     display: flex;
     flex-direction: column;
@@ -9,14 +8,14 @@
     align-items: center;
     background-color: #40c3f8;
     /* border: 2px solid red; */
-    /* padding: 60px; */
-    gap: 30px;
+    padding: 60px;
+    gap: 20px;
   
 }
 
 .outerProd1 > .oldProduct{
     /* border: 1px solid red; */
-    padding: 50px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +48,13 @@
     gap: 10px;
 } 
 
+.outerProd1 >.oldProduct >.prod-left>.heading{
+  /* border: 1px solid; */
+  display: flex;
+  width: 200px;
+  
 
+}
 
 
 .outerProd1 > .updateProduct{
@@ -58,16 +63,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding: 20px;
+    /* gap: 10px; */
+    padding: 15px;
     background-color: rgb(215, 234, 250);
     width: 50%;
     border-radius: 30px; 
 }
 
 
-.outerProd1 > .updateProduct > h2{
-  text-shadow: 0px 0px 1px black;  
+.outerProd1 > h1{
+  text-shadow: 0px 0px 5px white; 
+  text-transform: uppercase; 
+  font-size: 23px;
+  letter-spacing: 1.5px;
 }
 
 .outerProd1 > .updateProduct > h3{
@@ -88,23 +96,23 @@
      justify-content: center;
      align-items: center;
      /* border-radius: 25px; */
-     padding: 15px;
-     margin: 10px;
+     /* padding: 15px; */
+     /* margin: 10px; */
      
     }
-    .outerProd1 > .updateProduct >.update > form{
-     width: 90%;
+.outerProd1 > .updateProduct >.update > form{
+      width: 90%;
       display:  flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* gap: 10px; */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* gap: 10px; */
 }
 
 .outerProd1 > .updateProduct >.update > form>.update-details{
   /* border: 2px solid; */
   width: 100%;
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -119,13 +127,13 @@
   /* border: 2px solid green; */
   font-size: 20px;
   font-weight: bold;
+  margin-top: 10px; 
 }
 /* .outerProd1 > .updateProduct >.update > form >label {
 } */
 .outerProd1 > .updateProduct >.update > form >.update-details>input {
   /* flex-basis: 40%; */
     /* display: block; */
-    /* margin-top: 10px;   */
     font-size: 18px;
     font-weight: bold;
     border-radius: 8px;

@@ -1,7 +1,7 @@
 
 
 .homeStore{
-  height: calc(100vh - 50px);
+  height:94vh;
   background-color: #40c3f8;
   display: flex;
   justify-content: space-evenly;

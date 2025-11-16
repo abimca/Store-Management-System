@@ -339,62 +339,139 @@ let[filter,setFilter]=useState("")
         {
           defaultState == true ? ( prod.length > 0 ? (prod.map((product) => (
             <div key={product.productId} className='prod-inner'>
+              <div className="prod-card">
+                <div className="prod-innerLeft">
+                    <p className='heading'>Product Name </p>
+                    <p className='heading'>Product Brand </p>
+                    <p className='heading'>Product Type </p>
+                    <p className='heading'>Product Color </p>
+                    <p className='heading'>Product Price </p>
+                    <p className='heading'>Product Quantity </p>
+                </div>
+                <div className="prod-innerRight">
+                  <p>: {product.productName}</p>
+                  <p>: {product.productBrand}</p>
+                  <p>: {product.productType}</p>
+                  <p>: {product.productColor}</p>
+                  <p>: {product.productPrice}</p>
+                  <p>: {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity }</p>
 
-              <h2>Product Name : {product.productName}</h2>
-              <h2>Product Brand : {product.productBrand}</h2>
-              <h2>Product Type : {product.productType}</h2>
-              <h2>Product Color : {product.productColor}</h2>
-              <h2>Product Price : {product.productPrice}</h2>
-              <h2>Product Quantity : {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity }</h2>
-             
-            <button id='update' onClick={()=>update(product.productId)} >Update</button>
+                </div>
+              </div>             
+                  <button id='update' onClick={()=>update(product.productId)} >Update</button>
             </div>
           ))) : (<h2>No Products Found for This Branch</h2> )) : nameState == true ?  ( productsByName.length > 0 ? (productsByName.map((product) => (
             <div key={product.productId} className='prod-inner'>
 
-              <h2 id='h1'>Product Name : {product.productName}</h2>
-              <h2>Product Brand : {product.productBrand}</h2>
-              <h2>Product Type : {product.productType}</h2>
-              <h2>Product Color : {product.productColor}</h2>
-              <h2>Product Price : {product.productPrice}</h2>
-              <h2>Product Quantity : {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity }</h2>
+              <div className="prod-card">
+
+                 <div className="prod-innerLeft">
+                    <p className='heading' id='h1'>Product Name </p>
+                    <p className='heading'>Product Brand </p>
+                    <p className='heading'>Product Type </p>
+                    <p className='heading'>Product Color </p>
+                    <p className='heading'>Product Price </p>
+                    <p className='heading'>Product Quantity </p>
+                </div>
+
+                 <div className="prod-innerRight">
+                    <p id='h1'>: {product.productName}</p>
+                    <p>: {product.productBrand}</p>
+                    <p>: {product.productType}</p>
+                    <p>: {product.productColor}</p>
+                    <p>: {product.productPrice}</p>
+                    <p>: {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity }</p>
+
+                  </div>
+              </div>
+
              
             <button id='update' onClick={()=>update(product.productId)} >Update</button>
             </div>
           ))) : (<h2>Choose Product Name before Search</h2> )) : typeState == true ? ( productsByType.length > 0 ? (productsByType.map((product) => (
             <div key={product.productId} className='prod-inner'>
 
-             <h2 id='h1'>Product Type : {product.productType}</h2>
-              <h2>Product Name : {product.productName}</h2>
-              <h2>Product Brand : {product.productBrand}</h2>
-              <h2>Product Color : {product.productColor}</h2>
-              <h2>Product Price : {product.productPrice}</h2>
-              <h2>Product Quantity : {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity }</h2>
+              <div className="prod-card">
+
+               <div className="prod-innerLeft">
+                    <p className='heading' id='h1'>Product Type </p>
+                    <p className='heading'>Product Name </p>
+                    <p className='heading'>Product Brand </p>
+                    <p className='heading'>Product Color </p>
+                    <p className='heading'>Product Price </p>
+                    <p className='heading'>Product Quantity </p>
+                </div>
+
+                 <div className="prod-innerRight">
+                 
+                    <p id='h1'>: {product.productType}</p>
+                    <p>: {product.productName}</p>
+                    <p>: {product.productBrand}</p>
+                    <p>: {product.productColor}</p>
+                    <p>: {product.productPrice}</p>
+                    <p>: {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity }</p>
+                 
+                 </div>
+
+               </div>
+
              
             <button id='update' onClick={()=>update(product.productId)} >Update</button>
             </div>
           ))) : (<h2>Choose Product Type before Search</h2> )) : brandState == true ?  ( productsByBrand.length > 0 ? (productsByBrand.map((product) => (
             <div key={product.productId} className='prod-inner'>
 
-              <h2 id='h1'>Product Brand : {product.productBrand}</h2>
-              <h2>Product Name : {product.productName}</h2>
-              <h2>Product Type : {product.productType}</h2>
-              <h2>Product Color : {product.productColor}</h2>
-              <h2>Product Price : {product.productPrice}</h2>
-              <h2>Product Quantity : {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity }</h2>
-             
+               <div className="prod-card">
+              
+                <div className="prod-innerLeft">
+                    <p className='heading' id='h1'>Product Brand </p>
+                    <p className='heading'>Product Name </p>
+                    <p className='heading'>Product Type </p>
+                    <p className='heading'>Product Color </p>
+                    <p className='heading'>Product Price </p>
+                    <p className='heading'>Product Quantity </p>
+                </div>
+                
+                 <div className="prod-innerRight">
+
+                  <p id='h1'>: {product.productBrand}</p>
+                  <p>: {product.productName}</p>
+                  <p>: {product.productType}</p>
+                  <p>: {product.productColor}</p>
+                  <p>: {product.productPrice}</p>
+                  <p>: {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity }</p>
+    
+                 </div>
+               </div>
+
             <button id='update' onClick={()=>update(product.productId)} >Update</button>
             </div>
           ))) : (<h2>Choose Product Brand before Search</h2> )) : filterProductState == true && ( filterProduct.length >0  ? (filterProduct.map((product) =>(
             <div key={product.productId} className='prod-inner'>
 
-              <h2>Product Brand : {product.productBrand}</h2>
-             {filter == "ATOZ" || filter == "ZTOA" ? ( <h2 id='h1'>Product Name : {product.productName}</h2> ) :  <h2>Product Name : {product.productName}</h2>}
-              <h2>Product Type : {product.productType}</h2>
-              <h2>Product Color : {product.productColor}</h2>
-              <h2>Product Price : {product.productPrice}</h2>
-              {filter == "LOWTOHIGH" || filter == "HIGHTOLOW" ? ( <h2 id='h1'>Product Quantity : {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity }</h2> ) : <h2>Product Quantity : {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity }</h2> }
-             
+              <div className="prod-card">
+
+                <div className="prod-innerLeft">
+                    <p className='heading'>Product Brand </p>
+                    {filter == "ATOZ" || filter == "ZTOA" ? ( <p id='h1' className='heading'>Product Name</p> ) :  <p  className='heading'>Product Name</p>}
+                    <p className='heading'>Product Type </p>
+                    <p className='heading'>Product Color </p>
+                    <p className='heading'>Product Price </p>
+                    {filter == "LOWTOHIGH" || filter == "HIGHTOLOW" ? ( <p id='h1' className='heading'>Product Quantity </p> ) : <p  className='heading'>Product Quantity</p> }
+                </div>
+
+                 <div className="prod-innerRight">
+                  
+                    <p>: {product.productBrand}</p>
+                    {filter == "ATOZ" || filter == "ZTOA" ? ( <p id='h1'>: {product.productName}</p> ) :  <p>: {product.productName}</p>}
+                    <p>: {product.productType}</p>
+                    <p>: {product.productColor}</p>
+                    <p>: {product.productPrice}</p>
+                    {filter == "LOWTOHIGH" || filter == "HIGHTOLOW" ? ( <p id='h1'>: {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity }</p> ) : <p >: {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity }</p> }
+                        
+                  </div> 
+              </div>
+
             <button id='update' onClick={()=>update(product.productId)} >Update</button>
             </div>
           ))) : (<h2>No Products for this Filter</h2> ))

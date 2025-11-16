@@ -95,7 +95,7 @@ getStoreName()
 
     <div className="outerProduct">
             <h2>Welcome to {store.storeLocation} branch</h2>
-            <h3>Add Products</h3>
+            <h3>Enter the Product Details</h3>
         <div className='innerProduct'>
             
         <div className="addProduct">

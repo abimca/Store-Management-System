@@ -92,13 +92,13 @@ validate()
             <input type="text" name="" id="storeLoc" placeholder='Enter store location'required value={storeLoc} onChange={(e)=>setStoreLoc(e.target.value)} />
 
             {/* <label htmlFor="">Store Phone No</label> */}
-            <input type="" name="" id="storePhone" placeholder='Enter store phone number'required value={storePhone} onChange={(e)=> setStorePhone(e.target.value)} />
+            <input type="" name="" id="storePhone" placeholder='Enter store phone number'required maxLength={10} value={storePhone} onChange={(e)=> setStorePhone(e.target.value)} />
 
             {/* <label htmlFor="">Manager Name</label> */}
             <input type="text" name="" id="managerName" placeholder='Enter Manager name'required value={managerName} onChange={(e)=>setManagerName(e.target.value)} />
 
             {/* <label htmlFor="">Manager Phone No</label> */}
-            <input type="" name="" id="managerPhone" placeholder='Enter manager number'required value={managerPhone} onChange={(e)=>setManagerPhone(e.target.value)} />
+            <input type="" name="" id="managerPhone" placeholder='Enter manager number'required maxLength={10} value={managerPhone} onChange={(e)=>setManagerPhone(e.target.value)} />
 
             <button id='b1' type='submit' >Register</button>
           </form>

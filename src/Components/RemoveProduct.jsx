@@ -88,15 +88,28 @@ validate()
       <div className="prod-outer">
         { prod.length > 0 ? (prod.map((product) => (
             <div key={product.productId} className='prod-inner'>
+              <div className="prod-card">
+                  
+              <div className="prod-innerLeft">
+              <p id='heading'>Product Name</p>
+              <p id='heading'>Product Brand</p>
+              <p id='heading'>Product Type</p>
+              <p id='heading'>Product Color</p>
+              <p id='heading'>Product Price</p>
+              <p id='heading'>Product Quantity</p>
+              </div>
 
-              <h2>Product Name : {product.productName}</h2>
-              <h2>Product Brand : {product.productBrand}</h2>
-              <h2>Product Type : {product.productType}</h2>
-              <h2>Product Color : {product.productColor}</h2>
-              <h2>Product Price : {product.productPrice}</h2>
-              <h2>Product Quantity : {product.productQuantity}</h2>
-             
-            <button id='remove' onClick={()=>removeProducts(product.productId)} >Remove</button>
+              <div className="prod-innerRight">
+              <p>: {product.productName}</p>
+              <p>: {product.productBrand}</p>
+              <p>: {product.productType}</p>
+              <p>: {product.productColor}</p>
+              <p>: {product.productPrice}</p>
+              <p>: {product.productQuantity}</p>
+
+              </div>
+                </div>
+              <button id='remove' onClick={()=>removeProducts(product.productId)} >Remove</button>
             </div>
           ))) : ( <h1>No products to display ...</h1> )
         }

@@ -15,7 +15,7 @@
 .main>.outerdetails{
   /* border: 5px double rgb(9, 9, 178); */
   background-color: #e1eeff;
-  width: 50%;
+  width: 60%;
   border-radius: 30px;
   padding: 50px;
   display: flex;
@@ -43,20 +43,26 @@
 
 .main>.outerdetails>.strdetails>.strleft{
   /* border: 2px solid; */
-  flex-basis: 50%;
+  flex-basis: 40%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   justify-content: center;
   font-size: 23px;
   font-weight: bold;
   gap: 10px;
   letter-spacing: 0.5px;
 }
+
+.main>.outerdetails>.strdetails>.strleft>#heading{
+  /* border: 2px solid; */
+  margin-left: 70px;
+
+}
 .main>.outerdetails>.strdetails>.strright{
   /* border: 2px solid; */
   display: flex;
-  flex-basis: 50%;
+  flex-basis: 60%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -78,8 +84,8 @@
   background-color: #e1eeff;
   box-shadow: 0px 3px 5px black;
   border-radius: 30px;
-
-  /* border: 2px solid ; */
+  padding: 20px 10px;
+  border: 2px solid ;
 }
 
 .main > .innerdetails > button{

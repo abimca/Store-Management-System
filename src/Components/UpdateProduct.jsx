@@ -105,23 +105,23 @@ validate()
     <div className="outerProd1">
 
         <h1>{store.storeLocation} Branch</h1>
-    <div className="oldProduct">
-            <div  className='prod-left'>
-            <h2>Product Name :  </h2>
-            <h2>Product Brand :  </h2>
-            <h2>Product Type : </h2>
-            <h2>Product Color :  </h2>
-            <h2>Product Price : </h2>
-            <h2>Product Quantity : </h2>
-          </div>
+            <div className="oldProduct">
+                <div  className='prod-left'>
+                <h2 className='heading'>Product Name </h2>
+                <h2 className='heading'>Product Brand </h2>
+                <h2 className='heading'>Product Type </h2>
+                <h2 className='heading'>Product Color </h2>
+                <h2 className='heading'>Product Price </h2>
+                <h2 className='heading'>Product Quantity </h2>
+              </div>
 
           <div className="prod-right">
-            <h2>{prod.productName}</h2>
-            <h2>{prod.productBrand}</h2>
-            <h2>{prod.productType}</h2>
-            <h2>{prod.productColor}</h2>
-            <h2>{prod.productPrice}</h2>
-            <h2>{prod.productQuantity <=9 ? "0"+prod.productQuantity : prod.productQuantity}</h2>
+            <h2>: {prod.productName}</h2>
+            <h2>: {prod.productBrand}</h2>
+            <h2>: {prod.productType}</h2>
+            <h2>: {prod.productColor}</h2>
+            <h2>: {prod.productPrice}</h2>
+            <h2>: {prod.productQuantity <=9 ? "0"+prod.productQuantity : prod.productQuantity}</h2>
 
           </div>
           
@@ -149,13 +149,6 @@ validate()
    </div>
 
 
-
-
-    
-    
-    
-    
-    
     
     </>
   )

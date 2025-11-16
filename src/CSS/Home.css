@@ -1,11 +1,11 @@
 
 .homepage{
-  height: calc(100vh - 50px);
+  height: 94vh;
   /* border: 2px solid red; */
   display: flex;
   justify-content: space-evenly;
   background-color: #40c3f8;
-  padding: 100px;
+  padding: 50px;
 }
 
 .homepage > .left{

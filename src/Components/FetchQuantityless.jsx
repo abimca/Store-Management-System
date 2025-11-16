@@ -159,6 +159,8 @@ try {
     setdefaultState(true)
     setNameState(false)
     setBrandState(false)
+
+
   }
 
 
@@ -179,7 +181,7 @@ try {
     <div className="filter-search">
       <div className="label"><p>
           Search by Product Name  </p></div>
-          <div className="values"><select value={selectedProductName} onChange={(e)=>{setselectedProductName(e.target.value)}} >
+          <div className="values"><select value={selectedProductName} onChange={(e)=>{setselectedProductName(e.target.value);setselectedProductBrand("");setselectedProductType("")}} >
             <option value="">Choose Product Name</option>
             {ProductForName.length > 0 &&
               ProductForName.map((ele,ind) => (
@@ -196,7 +198,7 @@ try {
     <div className="filter-search">
       <div className="label"><p>
           Search by Product Type  </p></div>
-          <div className="values"><select value={selectedProductType} onChange={(e)=>{setselectedProductType(e.target.value)}} >
+          <div className="values"><select value={selectedProductType} onChange={(e)=>{setselectedProductType(e.target.value);setselectedProductBrand("");setselectedProductName("")}} >
             <option value="">Choose Product Type</option>
             {ProductForType.length > 0 &&
               ProductForType.map((ele,ind) => (
@@ -214,7 +216,7 @@ try {
     <div className="filter-search">
       <div className="label"><p>
           Search by Product Brand  </p></div>
-          <div className="values"><select value={selectedProductBrand} onChange={(e)=>{setselectedProductBrand(e.target.value)}} >
+          <div className="values"><select value={selectedProductBrand} onChange={(e)=>{setselectedProductBrand(e.target.value);setselectedProductName("");setselectedProductType("")}} >
             <option value="">Choose Product Brand</option>
             {ProductForBrand.length > 0 &&
               ProductForBrand.map((ele,ind) => (
@@ -246,46 +248,118 @@ try {
         {  defaultState == true ? (lessprod.length > 0 ? (lessprod.map((product) => (
             <div key={product.productId} className='prod-inner1'>
 
-              <h2>Product Name : {product.productName}</h2>
-              <h2>Product Brand : {product.productBrand}</h2>
-              <h2>Product Type : {product.productType}</h2>
-              <h2>Product Color : {product.productColor}</h2>
-              <h2>Product Price : {product.productPrice}</h2>
-              <h2 id='qty'>Product Quantity : {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity}</h2>
+              <div className="prod-card">
+
+              
+              <div className="prod-innerLeft">
+                    <p className='heading'>Product Name </p>
+                    <p className='heading'>Product Brand </p>
+                    <p className='heading'>Product Type </p>
+                    <p className='heading'>Product Color </p>
+                    <p className='heading'>Product Price </p>
+                    <p className='heading' id='qty'>Product Quantity </p>
+
+              </div>
+
+              <div className="prod-innerRight">
+
+              <p>: {product.productName}</p>
+              <p>: {product.productBrand}</p>
+              <p>: {product.productType}</p>
+              <p>: {product.productColor}</p>
+              <p>: {product.productPrice}</p>
+              <p id='qty'>: {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity}</p>
              
+
+              </div>
+              </div>
+
             </div>
           ))) : ( <h2>No products to display ...</h2> ) ) : nameState == true ?(productsByName.length > 0 ? (productsByName.map((product) => (
             <div key={product.productId} className='prod-inner1'>
 
-              <h2>Product Name : {product.productName}</h2>
-              <h2>Product Brand : {product.productBrand}</h2>
-              <h2>Product Type : {product.productType}</h2>
-              <h2>Product Color : {product.productColor}</h2>
-              <h2>Product Price : {product.productPrice}</h2>
-              <h2 id='qty'>Product Quantity : {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity}</h2>
+               <div className="prod-card">
+                
+                
+               <div className="prod-innerLeft">
+                    <p className='heading'>Product Name </p>
+                    <p className='heading'>Product Brand </p>
+                    <p className='heading'>Product Type </p>
+                    <p className='heading'>Product Color </p>
+                    <p className='heading'>Product Price </p>
+                    <p className='heading' id='qty'>Product Quantity </p>
+
+              </div>
+
+              <div className="prod-innerRight">
+
+                  <p>: {product.productName}</p>
+                  <p>: {product.productBrand}</p>
+                  <p>: {product.productType}</p>
+                  <p>: {product.productColor}</p>
+                  <p>: {product.productPrice}</p>
+                  <p id='qty'>: {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity}</p>
              
+              </div>
+                
+                </div> 
             </div>
           ))) : ( <h2>Choose the Product Name Before Search...</h2> ) ) : typeState == true ?(productsByType.length > 0 ? (productsByType.map((product) => (
             <div key={product.productId} className='prod-inner1'>
+              
+                <div className="prod-card">
 
-              <h2>Product Name : {product.productName}</h2>
-              <h2>Product Brand : {product.productBrand}</h2>
-              <h2>Product Type : {product.productType}</h2>
-              <h2>Product Color : {product.productColor}</h2>
-              <h2>Product Price : {product.productPrice}</h2>
-              <h2 id='qty'>Product Quantity : {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity}</h2>
-             
+
+               <div className="prod-innerLeft">
+                    <p className='heading'>Product Name </p>
+                    <p className='heading' >Product Brand </p>
+                    <p className='heading'>Product Type </p>
+                    <p className='heading'>Product Color </p>
+                    <p className='heading'>Product Price </p>
+                    <p className='heading' id='qty'>Product Quantity </p>
+
+              </div>
+
+              <div className="prod-innerRight">
+
+                  <p>: {product.productName}</p>
+                  <p>: {product.productBrand}</p>
+                  <p>: {product.productType}</p>
+                  <p>: {product.productColor}</p>
+                  <p>: {product.productPrice}</p>
+                  <p id='qty'>: {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity}</p>
+                
+              </div>
+
+                </div>
             </div>
           ))) : ( <h2>Choose the Product Type Before Search...</h2> ) ) : brandState == true &&(productsByBrand.length > 0 ? (productsByBrand.map((product) => (
             <div key={product.productId} className='prod-inner1'>
+              
 
-              <h2>Product Name : {product.productName}</h2>
-              <h2>Product Brand : {product.productBrand}</h2>
-              <h2>Product Type : {product.productType}</h2>
-              <h2>Product Color : {product.productColor}</h2>
-              <h2>Product Price : {product.productPrice}</h2>
-              <h2 id='qty'>Product Quantity : {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity}</h2>
+              <div className="prod-card">
+
+               <div className="prod-innerLeft">
+                    <p className='heading'>Product Name </p>
+                    <p className='heading'>Product Brand </p>
+                    <p className='heading'>Product Type </p>
+                    <p className='heading'>Product Color </p>
+                    <p className='heading'>Product Price </p>
+                    <p className='heading' id='qty'>Product Quantity </p>
+              </div>
+
+              <div className="prod-innerRight">
+
+              <p>: {product.productName}</p>
+              <p>: {product.productBrand}</p>
+              <p>: {product.productType}</p>
+              <p>: {product.productColor}</p>
+              <p>: {product.productPrice}</p>
+              <p id='qty'>: {product.productQuantity <=9 ? "0" +product.productQuantity : product.productQuantity}</p>
              
+              </div>
+
+              </div>
             </div>
           ))) : ( <h2>Choose the Product Brand Before Search...</h2> ) ) 
           

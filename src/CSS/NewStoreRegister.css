@@ -2,7 +2,6 @@
 /* New Store Register */
 
 .outer{
-  /* height: calc(100vh - 50px); */
   height: 94Vh;
   display: flex;
   /* flex-direction: column; */
